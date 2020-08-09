@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div>section {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #999999;
+    border: 1px black solid;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    float: right;
+    width: 40%;
+    border: 1px black solid;
+    border-right: 0;
+    border-top: 0;
+    clear: left;
+    font-size: 125%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.text {
+    clear: both;
+    padding: 20px;
+}
+
+.pink {
+    background-color: #D59898;
+}
+
+.red {
+    background-color: #C14543;
+}
+
+.light-yellow {
+    background-color: #E5D198;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+/********** Desktops only **********/
+
+@media (min-width:992px) {
+    .col-lg-4 {
+        float: left;
+        width: 30%;
+        margin-left: 2.5%;
+    }
+}
+
+/********** Tablets only **********/
+
+@media (min-width:768px) and (max-width:991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 46.25%;
+        margin-left: 2.5%;
+    }
+    .col-md-12 {
+        width: 95%;
+        margin-top: 15px;
+        margin-left: 2.5%;
+    }
+}
+
+/********** Mobile view only **********/
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 95%;
+        margin-top: 15px;
+        margin-left: 2.5%;
+    }
+}
